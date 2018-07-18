@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomFont" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Font" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovy-xB-Q9K">
+                                <rect key="frame" x="138" y="20" width="99" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSa-Wt-ck5">
+                                <rect key="frame" x="143" y="552" width="89" height="95"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Change Font" backgroundImage="full-circle-2">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ChangeFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Hp-Ug-GZ7"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oP4-KX-zOQ">
+                                <rect key="frame" x="16" y="49" width="343" height="502"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="502" id="HUo-ca-qzv"/>
+                                </constraints>
+                                <string key="text">30 Days Of Swift   
+
+This is probably the best option for me in terms of learning Swift while working. See you in the next project hopefully!!
+
+Love,
+Matthew Tuazon. </string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oP4-KX-zOQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="49" id="6R3-vj-zpE"/>
+                            <constraint firstItem="oP4-KX-zOQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Al4-Yv-mo2"/>
+                            <constraint firstAttribute="bottom" secondItem="fSa-Wt-ck5" secondAttribute="bottom" constant="20" symbolic="YES" id="CkT-da-G2l"/>
+                            <constraint firstItem="ovy-xB-Q9K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EZO-Sh-xlw"/>
+                            <constraint firstItem="ovy-xB-Q9K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hb1-Bd-f6u"/>
+                            <constraint firstItem="fSa-Wt-ck5" firstAttribute="centerX" secondItem="oP4-KX-zOQ" secondAttribute="centerX" id="VEt-MY-Mr3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oP4-KX-zOQ" secondAttribute="trailing" constant="16" id="Yc2-DA-OGg"/>
+                            <constraint firstItem="fSa-Wt-ck5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="axh-Ya-2ka"/>
+                            <constraint firstItem="fSa-Wt-ck5" firstAttribute="top" secondItem="oP4-KX-zOQ" secondAttribute="bottom" constant="1" id="ltZ-s0-rKt"/>
+                            <constraint firstItem="oP4-KX-zOQ" firstAttribute="top" secondItem="ovy-xB-Q9K" secondAttribute="bottom" constant="8" id="oh3-X3-1nQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="changeFontButton" destination="fSa-Wt-ck5" id="5an-xi-3WI"/>
+                        <outlet property="textViewText" destination="oP4-KX-zOQ" id="5Qv-lB-czz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="full-circle-2" width="256" height="256"/>
+    </resources>
+</document>
